@@ -1,0 +1,9 @@
+conference	1
+fashion	2
+concert	3
+non_event	4
+sports	5
+protest	6
+other	7
+exhibition	8
+theater_dance	9

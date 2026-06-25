@@ -1,0 +1,2371 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.owl-ontologies.com/Ontology1358660052.owl#"
+     xml:base="http://www.owl-ontologies.com/Ontology1358660052.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl">
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;ontology&quot;&gt;
+&lt;FuzzyLogic logic=&quot;zadeh&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#ID -->
+
+    <owl:AnnotationProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#ID">
+        <ace_lexicon:TV_sg>IDs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>IDed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>ID</ace_lexicon:TV_pl>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#SYN -->
+
+    <owl:AnnotationProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#SYN"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#fuzzyLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#fuzzyLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FcDT_TramTrong_BinhThuong -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FcDT_TramTrong_BinhThuong">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">24.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;rightshoulder&quot; a=&quot;9.0&quot; b=&quot;12&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_It -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_It">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">9.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;1.0&quot; b=&quot;3.0&quot; c=&quot;5&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_NghiemTrong -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_NghiemTrong">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">9.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;5.0&quot; b=&quot;7.0&quot; c=&quot;9.0&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_RatIt -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_RatIt">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">9.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;leftshoulder&quot; a=&quot;1&quot; b=&quot;3&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_RatNghiemTrong -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_RatNghiemTrong">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">9.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;rightshoulder&quot; a=&quot;7.0&quot; b=&quot;9.0&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_TrungBinh -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_TrungBinh">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">9.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;3.0&quot; b=&quot;5.0&quot; c=&quot;7.0&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_NhietDoCoThe_BinhThuong -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_NhietDoCoThe_BinhThuong">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">35.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">42.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;trapezoidal&quot; a=&quot;35&quot; b=&quot;35.5&quot; c=&quot;36.5&quot; d=&quot;37.0&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_NhietDoCoThe_Sot -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_NhietDoCoThe_Sot">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">35.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">42.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;rightshoulder&quot; a=&quot;36&quot; b=&quot;38.5&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_Out_CamThongThuong -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_Out_CamThongThuong">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">15.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;0&quot; b=&quot;5&quot; c=&quot;10&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_Out_Cum -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_Out_Cum">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">15.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;5&quot; b=&quot;10&quot; c=&quot;15&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TramTrong_BinhThuong -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TramTrong_BinhThuong">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">24.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;rightshoulder&quot; a=&quot;9.0&quot; b=&quot;12.0&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TramTrong_NguyHiem -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TramTrong_NguyHiem">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">24.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;leftshoulder&quot; a=&quot;1.0&quot; b=&quot;9.0&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TramTrong_Nhanh -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TramTrong_Nhanh">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">24.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;6&quot; b=&quot;9&quot; c=&quot;12&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TrieuChungLienQuan_It -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TrieuChungLienQuan_It">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">9.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;rightshoulder&quot; a=&quot;3&quot; b=&quot;5&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TrieuChungLienQuan_NghiemTrong -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TrieuChungLienQuan_NghiemTrong">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">9.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;rightshoulder&quot; a=&quot;5.0&quot; b=&quot;7.0&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TrieuChungLienQuan_TrungBinh -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TrieuChungLienQuan_TrungBinh">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">1.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">9.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;3.0&quot; b=&quot;5.0&quot; c=&quot;7&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_Tho_Binh_Thuong -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_Tho_Binh_Thuong">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">70.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_Tho_Cao -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_Tho_Cao">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">70.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_Tho_Thap -->
+
+    <rdfs:Datatype rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_Tho_Thap">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">70.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung">
+        <ace_lexicon:TV_vbg>FzOJ_CoTrieuChunged</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>FzOJ_CoTrieuChungs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>FzOJ_CoTrieuChung</ace_lexicon:TV_pl>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#DPCoGiaTri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#DPCoGiaTri">
+        <ace_lexicon:TV_pl>CoGiaTri</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>CoGiaTried</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>CoGiaTris</ace_lexicon:TV_sg>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo">
+        <ace_lexicon:TV_vbg>FzDP_CoGiaTriMoed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>FzDP_CoGiaTriMoes</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>FzDP_CoGiaTriMo</ace_lexicon:TV_pl>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#ID">
+        <ace_lexicon:TV_sg>IDs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>IDed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>ID</ace_lexicon:TV_pl>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#NCI_Definition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#NCI_Definition"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#NCI_PT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#NCI_PT"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#NICHD_Definition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#NICHD_Definition"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#SYN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#SYN"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Subset_Association1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Subset_Association1"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Subset_Association2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Subset_Association2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Benh_hoac_Roi_loan -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Benh_hoac_Roi_loan">
+        <ID rdf:datatype="&xsd;string">C2991</ID>
+        <SYN rdf:datatype="&xsd;string">Disease</SYN>
+        <ace_lexicon:CN_pl>Disease_or_Disorders</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Disease_or_Disorder</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Benh_nhan -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Benh_nhan">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nguoi"/>
+        <ace_lexicon:CN_sg>Benh_nhan</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Benh_nhans</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chan_doan"/>
+        <ace_lexicon:CN_sg>Cac_Luat</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Cac_Luats</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Cam_thong_thuong -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Cam_thong_thuong">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhiem_khuan_ho_hap"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_10"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_5"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_6"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_7"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_8"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_9"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_Out_CamThongThuong"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhiem_khuan_ho_hap"/>
+        <ace_lexicon:CN_pl>Cam_thong_thuongs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Cam_thong_thuong</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Can_nang_co_the -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Can_nang_co_the">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81328</ID>
+        <ace_lexicon:CN_sg>Body_Weight</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Body_Weights</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Can_nang_luc_sinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Can_nang_luc_sinh">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Can_nang_co_the"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C76325</ID>
+        <ace_lexicon:CN_sg>Birth_Weight</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Birth_Weights</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Can_nang_luc_sinh_thap -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Can_nang_luc_sinh_thap">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Can_nang_luc_sinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C34724</ID>
+        <ace_lexicon:CN_pl>Low_Birth_Weights</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Low_Birth_Weight</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Centimeter -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Centimeter">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C49668</ID>
+        <ace_lexicon:CN_pl>Centimeters</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Centimeter</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chan_doan -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chan_doan">
+        <ID rdf:datatype="&xsd;string">C3367</ID>
+        <SYN rdf:datatype="&xsd;string">Clinical Finding</SYN>
+        <ace_lexicon:CN_sg>Finding</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Findings</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <ID rdf:datatype="&xsd;string">C73437</ID>
+        <SYN rdf:datatype="&xsd;string">Component_of_Apgar_Score</SYN>
+        <ace_lexicon:CN_sg>APGAR_Score</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>APGAR_Scores</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_10_phut -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_10_phut">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C98817</ID>
+        <ace_lexicon:CN_sg>Apgar_Score_At_10_Minutes</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Apgar_Score_At_10_Minuteses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_15_phut -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_15_phut">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C98819</ID>
+        <ace_lexicon:CN_sg>Apgar_Score_At_15_Minutes</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Apgar_Score_At_15_Minuteses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_1_phut -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_1_phut">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C98816</ID>
+        <ace_lexicon:CN_pl>Apgar_Score_At_1_Minutes</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Apgar_Score_At_1_Minute</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_20_phut -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_20_phut">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C98820</ID>
+        <ace_lexicon:CN_pl>Apgar_Score_At_20_Minuteses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Apgar_Score_At_20_Minutes</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_5_phut -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR_luc_5_phut">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_APGAR"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C98821</ID>
+        <ace_lexicon:CN_pl>Apgar_Score_At_5_Minuteses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Apgar_Score_At_5_Minutes</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_Ballard/Dubowitz -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_Ballard/Dubowitz">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <ID rdf:datatype="&xsd;string">C81282</ID>
+        <SYN rdf:datatype="&xsd;string">Dubowitz_Score</SYN>
+        <ace_lexicon:CN_sg>Ballard/Dubowitz_Score</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Ballard/Dubowitz_Score</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_Breathing_Effort -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_Breathing_Effort">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81306</ID>
+        <ace_lexicon:CN_pl>Breathing_Effort_Scores</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Breathing_Effort_Score</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_kich_thich_phan_xa -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_kich_thich_phan_xa">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81319</ID>
+        <ace_lexicon:CN_sg>Reflex_Irritability_Score</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Reflex_Irritability_Scores</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_mau_da -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_mau_da">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81321</ID>
+        <ace_lexicon:CN_pl>Skin_Color_Scores</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Skin_Color_Score</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_nhip_tim -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_nhip_tim">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81309</ID>
+        <ace_lexicon:CN_sg>Heart_Rate_Score</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Heart_Rate_Scores</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_truong_luc_co -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chi_so_truong_luc_co">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81312</ID>
+        <ace_lexicon:CN_pl>Muscle_Tone_Scores</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Muscle_Tone_Score</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chieu_dai -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chieu_dai">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C25334</ID>
+        <ace_lexicon:CN_sg>Length</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Lengths</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chu_vi_dau -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chu_vi_dau">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chieu_dai"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81255</ID>
+        <ace_lexicon:CN_pl>Head_Circumferences</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Head_Circumference</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chu_vi_dau_luc_moi_sinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chu_vi_dau_luc_moi_sinh">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chu_vi_dau"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C101221</ID>
+        <ace_lexicon:CN_pl>Head_Circumference_at_Initial_Dispositions</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Head_Circumference_at_Initial_Disposition</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Chung_toc -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Chung_toc">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhan_khau"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C16564</ID>
+        <ace_lexicon:CN_sg>Ethnic_Group</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Ethnic_Groups</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Co_the_doi_xung -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Co_the_doi_xung">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81316</ID>
+        <ace_lexicon:CN_pl>Physical_Symmetries</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Physical_Symmetry</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Cum -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Cum">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhiem_khuan_ho_hap"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_1"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_2"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_3"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_4"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_Out_Cum"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhiem_khuan_ho_hap"/>
+        <ace_lexicon:CN_pl>Nhiem_khuan_ho_haps</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Nhiem_khuan_ho_hap</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh">
+        <ID rdf:datatype="&xsd;string">C20189</ID>
+        <ace_lexicon:CN_pl>Property_or_Attributes</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Property_or_Attribute</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_hieu_hoac_trieu_chung"/>
+        <ace_lexicon:CN_pl>Dau_Coes</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Dau_Co</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_hieu_hoac_trieu_chung -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_hieu_hoac_trieu_chung">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chan_doan"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C100104</ID>
+        <ace_lexicon:CN_sg>Signs_or_Symptoms</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Signs_or_Symptomses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Dia_chi -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Dia_chi">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhan_khau"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C25407</ID>
+        <ace_lexicon:CN_sg>Address</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Addresses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C25709</ID>
+        <ace_lexicon:CN_sg>Unit_of_Measure</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Unit_of_Measures</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Du_lieu -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Du_lieu">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C49100</ID>
+        <ace_lexicon:CN_sg>Data_Value</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Data_Values</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_It -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_It">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_It"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+        <ace_lexicon:CN_sg>FzC_DauCo_It</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzC_DauCo_Its</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_NghiemTrong -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_NghiemTrong">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_NghiemTrong"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+        <ace_lexicon:CN_sg>FzC_DauCo_NghiemTrong</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzC_DauCo_NghiemTrongs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_RatIt -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_RatIt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_RatIt"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+        <ace_lexicon:CN_pl>FzC_DauCo_RatIts</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzC_DauCo_RatIt</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_RatNghiemTrong -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_RatNghiemTrong">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_RatNghiemTrong"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+        <ace_lexicon:CN_pl>FzC_DauCo_RatNghiemTrongs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzC_DauCo_RatNghiemTrong</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_TrungBinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_TrungBinh">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_DauCo_TrungBinh"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_co"/>
+        <ace_lexicon:CN_sg>FzC_DauCo_TrungBinh</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzC_DauCo_TrungBinhs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_BinhThuong -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_BinhThuong">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tang_than_nhiet"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_NhietDoCoThe_BinhThuong"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tang_than_nhiet"/>
+        <ace_lexicon:CN_pl>FzC_NhietDoCoThe_BinhThuongs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzC_NhietDoCoThe_BinhThuong</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_Sot -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_Sot">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tang_than_nhiet"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_NhietDoCoThe_Sot"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tang_than_nhiet"/>
+        <ace_lexicon:CN_sg>FzC_NhietDoCoThe_Sot</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzC_NhietDoCoThe_Sots</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_BinhThuong -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_BinhThuong">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tram_trong_hoa"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TramTrong_BinhThuong"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tram_trong_hoa"/>
+        <ace_lexicon:CN_pl>FzC_TramTrong_TrungBinhs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzC_TramTrong_TrungBinh</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_NguyHiem -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_NguyHiem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tram_trong_hoa"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TramTrong_NguyHiem"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tram_trong_hoa"/>
+        <ace_lexicon:CN_pl>FzC_TramTrong_NguyHiems</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzC_TramTrong_NguyHiem</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_Nhanh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_Nhanh">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tram_trong_hoa"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TramTrong_Nhanh"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tram_trong_hoa"/>
+        <ace_lexicon:CN_sg>FzC_TramTrong_Nhanh</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzC_TramTrong_Nhanhs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_It -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_It">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Trieu_chung_lien_quan"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TrieuChungLienQuan_It"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_RatNghiemTrong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_Sot"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_Nhanh"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_It"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Trieu_chung_lien_quan"/>
+        <ace_lexicon:CN_pl>FzC_TrieuChungLienQuan_Its</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzC_TrieuChungLienQuan_It</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_NghiemTrong -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_NghiemTrong">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Trieu_chung_lien_quan"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TrieuChungLienQuan_NghiemTrong"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Trieu_chung_lien_quan"/>
+        <ace_lexicon:CN_sg>FzC_TrieuChungLienQuan_NguyHiem</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzC_TrieuChungLienQuan_NguyHiems</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_TrungBinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_TrungBinh">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Trieu_chung_lien_quan"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDP_CoGiaTriMo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzDT_TrieuChungLienQuan_TrungBinh"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Trieu_chung_lien_quan"/>
+        <ace_lexicon:CN_pl>FzC_TrieuChungLienQuan_TrungBinhs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzC_TrieuChungLienQuan_TrungBinh</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_1 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_1">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_Sot"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_NguyHiem"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_sg>FzR1</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzR1s</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_10 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_10">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_BinhThuong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_BinhThuong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_TrungBinh"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_pl>FzR10s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzR10</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_2 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_2">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_BinhThuong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_BinhThuong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_sg>FzR2</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzR2s</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_3 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_3">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_RatNghiemTrong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_Sot"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_Nhanh"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_sg>FzR3</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzR3s</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_4 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_4">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_RatNghiemTrong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_Sot"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_NguyHiem"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_sg>FzR4</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzR4s</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_5 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_5">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_RatNghiemTrong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_Sot"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_Nhanh"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_NghiemTrong"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_pl>FzR5s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzR5</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_6 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_6">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_NghiemTrong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_Sot"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_BinhThuong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_NghiemTrong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_sg>FzR6</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzR6s</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_7 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_7">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_BinhThuong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_Nhanh"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_sg>FzR7</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FzR7s</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_8 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_8">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_DauCo_It"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_BinhThuong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_Nhanh"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_pl>FzR8s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzR8</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_9 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzR_9">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#FzOP_CoTrieuChung"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_NhietDoCoThe_BinhThuong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TramTrong_BinhThuong"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#FzC_TrieuChungLienQuan_TrungBinh"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Cac_Luat"/>
+        <ace_lexicon:CN_pl>FzR9s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FzR9</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Gio -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Gio">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C25207</ID>
+        <ace_lexicon:CN_pl>Times</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Time</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Gio_sinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Gio_sinh">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Gio"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81296</ID>
+        <ace_lexicon:CN_sg>Birth_Time</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Birth_Times</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Gioi_tinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Gioi_tinh">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C28421</ID>
+        <ace_lexicon:CN_pl>Sexes</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Sex</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Gram -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Gram">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C48155</ID>
+        <ace_lexicon:CN_sg>Gram</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Grams</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Huyet_ap -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Huyet_ap">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C54706</ID>
+        <ace_lexicon:CN_sg>Blood_Pressure</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Blood_Pressures</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Inch -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Inch">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C48500</ID>
+        <ace_lexicon:CN_sg>Inch</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Inches</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Microinternational_Unit_per_Milliliter -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Microinternational_Unit_per_Milliliter">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C67405</ID>
+        <ace_lexicon:CN_sg>Microinternational_Unit_per_Milliliter</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Microinternational_Unit_per_Milliliters</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Milligram_per_Deciliter -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Milligram_per_Deciliter">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C67015</ID>
+        <ace_lexicon:CN_pl>Milligram_per_Deciliters</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Milligram_per_Deciliter</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Millimole_per_Liter -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Millimole_per_Liter">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C64387</ID>
+        <ace_lexicon:CN_sg>Millimole_per_Liter</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Millimole_per_Liters</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Molar_Ratio -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Molar_Ratio">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81268</ID>
+        <ace_lexicon:CN_sg>Molar_Ratio</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Molar_Ratios</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nam -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nam">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Gioi_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C20197</ID>
+        <ace_lexicon:CN_pl>Males</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Male</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nanogram_per_Deciliter -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nanogram_per_Deciliter">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C67326</ID>
+        <ace_lexicon:CN_sg>Nanogram_per_Deciliter</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Nanogram_per_Deciliters</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Ngay_sinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Ngay_sinh">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Ngay_thang"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C68615</ID>
+        <ace_lexicon:CN_pl>Birth_Dates</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Birth_Date</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Ngay_thang -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Ngay_thang">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tu_dinh_tinh_tam_thoi"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C25164</ID>
+        <ace_lexicon:CN_sg>Date</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Dates</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Ngoai_hinh_chung -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Ngoai_hinh_chung">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C87079</ID>
+        <ace_lexicon:CN_pl>General_Appearances</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>General_Appearance</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nguoi -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nguoi">
+        <ID rdf:datatype="&xsd;string">C25190</ID>
+        <ace_lexicon:CN_sg>Person</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Persons</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhan_khau -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhan_khau">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C16495</ID>
+        <ace_lexicon:CN_pl>Demographicses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Demographics</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhiem_khuan_ho_hap -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhiem_khuan_ho_hap">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Benh_hoac_Roi_loan"/>
+        <ID rdf:datatype="&xsd;string">C26871</ID>
+        <SYN rdf:datatype="&xsd;string">Disorder of Respiratory System</SYN>
+        <ace_lexicon:CN_pl>Respiratory_System_Disorders</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Respiratory_System_Disorder</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhiet_do -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhiet_do">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C25206</ID>
+        <ace_lexicon:CN_pl>Temperatures</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Temperature</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_dap_cua_tim -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_dap_cua_tim">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C87081</ID>
+        <ace_lexicon:CN_pl>Heart_Rhythms</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Heart_Rhythm</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_mach -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_mach">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C49676</ID>
+        <ace_lexicon:CN_sg>Pulse_Rate</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Pulse_Rates</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C49677</ID>
+        <ace_lexicon:CN_pl>Heart_Rates</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Heart_Rate</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim_so_sinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim_so_sinh">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C87103</ID>
+        <ace_lexicon:CN_sg>Newborn_Heart_Rate</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Newborn_Heart_Rates</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim_thai -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim_thai">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C92716</ID>
+        <ace_lexicon:CN_sg>Fetal_Heart_Rate</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Fetal_Heart_Rates</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim_thai_co_so -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim_thai_co_so">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhip_tim_thai"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C92741</ID>
+        <ace_lexicon:CN_pl>Baseline_Fetal_Heart_Rates</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Baseline_Fetal_Heart_Rate</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Noi_cung_cap_thong_tin -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Noi_cung_cap_thong_tin">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhan_khau"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81294</ID>
+        <ace_lexicon:CN_pl>Submitting_Facilities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Submitting_Facility</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Nu -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Nu">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Gioi_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C16576</ID>
+        <ace_lexicon:CN_sg>Female</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Females</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Ounce -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Ounce">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C48519</ID>
+        <ace_lexicon:CN_pl>Ounces</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Ounce</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Phuong_thuc -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Phuong_thuc">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C41147</ID>
+        <ace_lexicon:CN_sg>Modality</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Modalities</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Pound -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Pound">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C48531</ID>
+        <ace_lexicon:CN_pl>Pounds</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Pound</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#So_dien_thoai -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#So_dien_thoai">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_ca_nhan"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C40978</ID>
+        <ace_lexicon:CN_pl>Telephone_Numbers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Telephone_Number</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#So_dien_thoai__co_dinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#So_dien_thoai__co_dinh">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#So_dien_thoai"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81284</ID>
+        <ace_lexicon:CN_pl>Residential_Telephone_Numbers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Residential_Telephone_Number</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#So_dien_thoai_di_dong -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#So_dien_thoai_di_dong">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#So_dien_thoai"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81240</ID>
+        <ace_lexicon:CN_pl>Cellular_Telephone_Numbers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Cellular_Telephone_Number</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Tan_so_ho_hap -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tan_so_ho_hap">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C49678</ID>
+        <ace_lexicon:CN_pl>Respiratory_Rates</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Respiratory_Rate</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Tan_so_ho_hap_so_sinh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tan_so_ho_hap_so_sinh">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Tan_so_ho_hap"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C87104</ID>
+        <ace_lexicon:CN_pl>Newborn_Respiratory_Rates</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Newborn_Respiratory_Rate</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Tang_than_nhiet -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tang_than_nhiet">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_hieu_hoac_trieu_chung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C50589</ID>
+        <ace_lexicon:CN_sg>Hyperthermia</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Hyperthermias</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Ten_nguoi -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Ten_nguoi">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_ca_nhan"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C25191</ID>
+        <ace_lexicon:CN_pl>Person_Names</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Person_Name</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_ca_nhan -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_ca_nhan">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C90492</ID>
+        <ace_lexicon:CN_pl>Personal_Informations</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Personal_Information</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C25447</ID>
+        <ace_lexicon:CN_pl>Characteristics</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Characteristic</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tiep_Xuc_Benh">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#DPCoGiaTri"/>
+                <owl:someValuesFrom rdf:resource="&xsd;boolean"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_hieu_hoac_trieu_chung"/>
+        <ace_lexicon:CN_sg>Tien_su_benh</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Tien_su_benhs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Tong_chieu_dai_co_the -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tong_chieu_dai_co_the">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Chieu_dai"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81298</ID>
+        <ace_lexicon:CN_pl>Total_Body_Lengths</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Total_Body_Length</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Tram_trong_hoa -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tram_trong_hoa">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_hieu_hoac_trieu_chung"/>
+        <ace_lexicon:CN_pl>Tram_trong_hoas</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Tram_trong_hoa</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tri_so">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Du_lieu"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C81274</ID>
+        <ace_lexicon:CN_pl>Numeric_Values</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Numeric_Value</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Trieu_chung_lien_quan -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Trieu_chung_lien_quan">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dau_hieu_hoac_trieu_chung"/>
+        <ace_lexicon:CN_pl>Trieu_chung_lien_quans</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Trieu_chung_lien_quan</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Trinh_do_van_hoa -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Trinh_do_van_hoa">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Nhan_khau"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C17953</ID>
+        <ace_lexicon:CN_sg>Education_Level</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Education_Levels</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Tu_dinh_tinh_tam_thoi -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tu_dinh_tinh_tam_thoi">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C21514</ID>
+        <ace_lexicon:CN_pl>Temporal_Qualifiers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Temporal_Qualifier</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Tuoi_thai_lon -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Tuoi_thai_lon">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Thong_tin_dac_trung"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C87092</ID>
+        <ace_lexicon:CN_pl>Large_for_Gestational_Ages</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Large_for_Gestational_Age</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Unit_per_Gram -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Unit_per_Gram">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Don_vi_do_luong"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C77606</ID>
+        <ace_lexicon:CN_sg>Unit_per_Gram</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Unit_per_Grams</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1358660052.owl#Yeu_to_nguy_co -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1358660052.owl#Yeu_to_nguy_co">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1358660052.owl#Dac_tinh_va_thuoc_tinh"/>
+        <SYN rdf:datatype="&xsd;string"></SYN>
+        <ID rdf:datatype="&xsd;string">C17103</ID>
+        <ace_lexicon:CN_pl>Risk_Factors</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Risk_Factor</ace_lexicon:CN_sg>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
